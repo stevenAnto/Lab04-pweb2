@@ -49,8 +49,16 @@ class Picture:
     return Picture(self.img)
 
   def up(self, p):
-      """dsfas"""
-    #return Picture(None)
+    def cambiar(caracter1,caracter2):
+        if caracter2 == " ":
+            caracter1 = caracter1
+        else :
+            caracter1 = caracter2
+        return caracter1
+    unirCaracter =  lambda cadena1,cadena2 : "".join([cambiar(cadena1[i],cadena2[i]) for  i  in range(len(cadena1))])
+    for i in range (len(self.img)):
+        self.img[i] = unirCaracter(self.img[i],p.img[i])
+    return Picture(self.img)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
