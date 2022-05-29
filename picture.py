@@ -31,7 +31,13 @@ class Picture:
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
-    #return Picture(None)
+    #cambiarCaracteres cambia caracter de cualquier cadena. en este caso cambiamamos los caracteres  de cada
+    #elemento de la lista del objeto picture , para usamos join que une todo los caracteres vacios devolviendo nuevam
+    #un string. Interesante la manera como el join reconoce como un objeto iterable al for entre  corchetes
+    cambiarCaracteres =  lambda cadena : "".join([self._invColor(cadena[i]) for  i  in range(len(cadena))])
+    for i in range(len(self.img)):
+        self.img[i] = cambiarCaracteres(self.img[i])
+    return Picture(self.img)
 
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
@@ -71,3 +77,4 @@ def invertirString(cadena):
     for caracter  in cadena:
         strInvertido = caracter + strInvertido
     return strInvertido
+
