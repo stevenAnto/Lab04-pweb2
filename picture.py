@@ -24,7 +24,10 @@ class Picture:
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    #return Picture(None)
+    for i in  range(len(self.img)):
+        self.img[i] = invertirString(self.img[i])
+    return Picture(self.img)
+
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
@@ -62,3 +65,9 @@ class Picture:
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
     return Picture(None)
+
+def invertirString(cadena):
+    strInvertido=""
+    for caracter  in cadena:
+        strInvertido = caracter + strInvertido
+    return strInvertido
