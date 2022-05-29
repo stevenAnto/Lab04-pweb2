@@ -4,8 +4,7 @@ class Picture:
       self.img = img
 
   def __eq__(self, other):
-      """jejejej"""
-    #return self.img == other.img
+    return self.img == other.img
 
   def _invColor(self, color):
       if color not in inverter:
@@ -14,7 +13,14 @@ class Picture:
 
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
-    #return Picture(None)
+    vertical = []
+    contador = len(self.img)-1;
+    print (contador)
+    for i in range(len(self.img)):
+        vertical.append(self.img[contador])
+        contador=contador-1
+
+    return Picture(vertical)
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
@@ -27,7 +33,11 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    #return Picture(None)
+    print (self)
+    for i in range(len(self.img)):
+        self.img[i]=self.img[i]+p.img[i]
+
+    return Picture(self.img)
 
   def up(self, p):
       """dsfas"""
