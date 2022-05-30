@@ -337,10 +337,16 @@
 #
 
 ## CUESTIONARIO
--   ¿Qué son los archivos *.pyc?
--   ¿Para qué sirve el directorio __pycache__?
--   ¿Cuáles son los usos y lo que representa el subguión en Python?
-
+###   ¿Qué son los archivos *.pyc?
+-los archivos .pyc son versiones compiladas de los archivos de texto sin formato ".py", creados en tiempo de ejecución para hacer que los programas se ejecuten más rápido. Los archivos .pyc se crean (y posiblemente se sobrescriben) solo cuando ese archivo python es importado por algún otro script. Si se llama a la importación, Python comprueba si la marca de tiempo interna del archivo .pyc coincide con el archivo .py correspondiente. Si lo hace, carga el .pyc; si no lo hace o si el .pyc aún no existe, Python compila el archivo .py en un .pyc y lo carga.
+### ¿Para qué sirve el directorio __pycache__?
+-Para acelerar la carga de módulos, Python cachea las versiones compiladas de cada módulo en el directorio __pycache__ bajo el nombre module.version.pyc dónde la versión codifica el formato del archivo compilado; generalmente contiene el número de version de Python.
+###   ¿Cuáles son los usos y lo que representa el subguión en Python?
+-Utilizarlo en Internacionalización (i18n) o Localización (l10n).
+-Almacenar el valor de la última expresión en intérprete.
+-Separar los dígitos de un número.
+-Ignorar valores específicos.
+-Dar significados especiales (y funciones) al nombre de variables o funciones.
 #
 
 ## REFERENCIAS
