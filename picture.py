@@ -32,7 +32,7 @@ class Picture:
   def negative(self):
     """ Devuelve un negativo de la imagen """
     #cambiarCaracteres cambia caracter de cualquier cadena. en este caso cambiamamos los caracteres  de cada
-    #elemento de la lista del objeto picture , para usamos join que une todo los caracteres vacios devolviendo nuevam
+    #elemento de la lista del objeto picture , para eso usamos join que une todo los caracteres vacios devolviendo nuevamente
     #un string. Interesante la manera como el join reconoce como un objeto iterable al for entre  corchetes
     cambiarCaracteres =  lambda cadena : "".join([self._invColor(cadena[i]) for  i  in range(len(cadena))])
     for i in range(len(self.img)):
@@ -55,6 +55,7 @@ class Picture:
         else :
             caracter1 = caracter2
         return caracter1
+    #mismo join aplicando a un for entre corchetes
     unirCaracter =  lambda cadena1,cadena2 : "".join([cambiar(cadena1[i],cadena2[i]) for  i  in range(len(cadena1))])
     for i in range (len(self.img)):
         self.img[i] = unirCaracter(self.img[i],p.img[i])
