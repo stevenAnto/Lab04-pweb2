@@ -69,7 +69,13 @@ class Picture:
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
-    #return Picture(None)
+    def callMethods(self,n):
+        for i in range(n):
+            self.img[0]=self.img[0]+self.img[0]
+        return self.img[0]    
+    for i in range(len(self.img)):
+        self.img[i]=callMethods(self.img[i],n)
+    return Picture(self.img)
 
   def verticalRepeat(self, n):
       """dsfsadf"""
