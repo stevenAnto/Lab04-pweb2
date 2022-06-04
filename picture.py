@@ -81,14 +81,10 @@ class Picture:
     o antihorario"""
     figura= []
     text= ""
-    espacio= ""
-    for i in range(len(self.img[0])):
-      espacio+= " "
     for c in range(len(self.img[0])):
       for t in self.img:
-        text+= t[c]
-      figura.append(text)
-      figura.append(espacio)
+        text+= t[c] + " "
+      figura.append(text[0:len(text)-1]) #Remueve el espacio final
       text= ""
     return Picture(figura)
 
