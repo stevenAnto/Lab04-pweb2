@@ -83,8 +83,7 @@ class Picture:
     text= ""
     for c in range(len(self.img[0])):
       for t in self.img:
-        text+= t[c] + " "
-      figura.append(text[0:len(text)-1]) #Remueve el espacio final
+        text+= t[c]
       text= ""
     return Picture(figura)
 
