@@ -1,3 +1,4 @@
+from typing_extensions import Self
 from colors import *
 class Picture:
   def __init__(self, img):
@@ -72,8 +73,13 @@ class Picture:
     #return Picture(None)
 
   def verticalRepeat(self, n):
-      """dsfsadf"""
-   # return Picture(None)
+    """ Devuelve una nueva figura repitiendo la figura actual abajo
+      la cantidad de veces que indique el valor de n """
+    figura= []
+    for i in range(n):
+      for t in self.img:
+        figura.append(t)
+    return Picture(figura)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
