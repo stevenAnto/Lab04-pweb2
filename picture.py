@@ -72,14 +72,27 @@ class Picture:
     #return Picture(None)
 
   def verticalRepeat(self, n):
-      """dsfsadf"""
-   # return Picture(None)
+    """ Devuelve una nueva figura repitiendo la figura actual abajo
+      la cantidad de veces que indique el valor de n """
+    figura= []
+    for i in range(n):
+      for t in self.img:
+        figura.append(t)
+    return Picture(figura)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
-    return Picture(None)
+    figura= []
+    text= ""
+    for c in range(len(self.img[0])):
+      for t in self.img:
+        text+= t[c]
+      figura.append(text)
+      text= ""
+    return Picture(figura)
+
 
 def invertirString(cadena):
     strInvertido=""
