@@ -84,6 +84,7 @@ class Picture:
     for c in range(len(self.img[0])):
       for t in self.img:
         text+= t[c]
+      figura.append(text)
       text= ""
     return Picture(figura)
 
