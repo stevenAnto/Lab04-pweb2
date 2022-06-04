@@ -1,4 +1,3 @@
-from typing_extensions import Self
 from colors import *
 class Picture:
   def __init__(self, img):
