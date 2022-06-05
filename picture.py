@@ -15,7 +15,7 @@ class Picture:
     """ Devuelve el espejo vertical de la imagen """
     vertical = []
     contador = len(self.img)-1;
-    print (contador)
+    #print (contador)
     for i in range(len(self.img)):
         vertical.append(self.img[contador])
         contador=contador-1
@@ -42,7 +42,7 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    print (self)
+    #print (self)
     for i in range(len(self.img)):
         self.img[i]=self.img[i]+p.img[i]
 
@@ -57,13 +57,16 @@ class Picture:
         return caracter1
     #mismo join aplicando a un for entre corchetes
     unirCaracter =  lambda cadena1,cadena2 : "".join([cambiar(cadena1[i],cadena2[i]) for  i  in range(len(cadena1))])
-    for i in range (len(self.img)):
+    for i in range(len(self.img)):
         self.img[i] = unirCaracter(self.img[i],p.img[i])
     return Picture(self.img)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
+    for i in range(len(p.img)):
+      self.insert(i,p.img[i])
+    return Picture(self.img)
    # return Picture(None)
   
   def horizontalRepeat(self, n):
