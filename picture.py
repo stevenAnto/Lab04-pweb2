@@ -59,7 +59,9 @@ class Picture:
   def up(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    figura= p.img
+    figura= []
+    for text in p.img:
+      figura.append(text)
     for text in self.img:
       figura.append(text)
     return Picture(figura)
@@ -72,10 +74,13 @@ class Picture:
         else :
             return caracter2
     #mismo join aplicando a un for entre corchetes
-    unirCaracter =  lambda cadena1,cadena2 : "".join([cambiar(cadena1[i],cadena2[i]) for  i  in range(len(cadena1))])
     figura= []
-    for i in range(len(self.img)):
-        figura.append(unirCaracter(self.img[i],p.img[i]))
+    aux= ""
+    for f in range(len(self.img)):
+      aux= ""
+      for c in range(len(self.img[f])):
+        aux+= cambiar(self.img[f][c], p.img[f][c])
+      figura.append(aux)
     return Picture(figura)
   
   def horizontalRepeat(self, n):
@@ -84,7 +89,7 @@ class Picture:
     figura= []
     for text in self.img:
         aux = ""   
-        for j in range(n-1):
+        for j in range(n):
             aux+= text
         figura.append(aux)
     return Picture(figura)
