@@ -24,6 +24,13 @@ class Picture:
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
+    
+    def invertirString(cadena):
+      strInvertido=""
+      for caracter  in cadena:
+          strInvertido = caracter + strInvertido
+      return strInvertido
+    
     figura= []
     for text in self.img:
         figura.append(invertirString(text))
@@ -74,11 +81,13 @@ class Picture:
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
-    for i in range(len(self.img)):
-        aux = self.img[i]   
+    figura= []
+    for text in self.img:
+        aux = ""   
         for j in range(n-1):
-            self.img[i]=aux+self.img[i]
-    return Picture(self.img)
+            aux+= text
+        figura.append(aux)
+    return Picture(figura)
 
   def verticalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual abajo
@@ -101,10 +110,4 @@ class Picture:
       figura.append(text)
       text= ""
     return Picture(figura)
-
-def invertirString(cadena):
-  strInvertido=""
-  for caracter  in cadena:
-      strInvertido = caracter + strInvertido
-  return strInvertido
 
