@@ -141,6 +141,10 @@ Primero, se creo un Array llamado *figura*. Se colocón un buble for con contado
 Este método devía devolver una figura rotada 90 grados en sentido horario o antihorario.
 Primero, se creo un Array llamado *figura* vacio y una variable String llamada *text*. Se colocón un buble for con contador *c* que tiene las mismas caracteristicas de los bucles usados en mirror. Dentro de ese buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Luego se almacenará en la variable *text* el caracter en posición *c* de la cadena *t* que pertenece al arreglo *self.img*, agregandose en el arreglo *figura* por cada iteración y siendo dado su valor de *text* como "" para evitar reiteración, dando así una rotación de 90 grados en sentido horario. Se retorna el objeto Picture del arreglo *figura*.
 
+### b) Ejercicio: Dibujar las siguientes figuras
+#### Inciso A
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_a.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+
 ## CUESTIONARIO
 ###   ¿Qué son los archivos *.pyc?
 -los archivos .pyc son versiones compiladas de los archivos de texto sin formato ".py", creados en tiempo de ejecución para hacer que los programas se ejecuten más rápido. Los archivos .pyc se crean (y posiblemente se sobrescriben) solo cuando ese archivo python es importado por algún otro script. Si se llama a la importación, Python comprueba si la marca de tiempo interna del archivo .pyc coincide con el archivo .py correspondiente. Si lo hace, carga el .pyc; si no lo hace o si el .pyc aún no existe, Python compila el archivo .py en un .pyc y lo carga.
