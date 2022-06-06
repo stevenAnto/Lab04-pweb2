@@ -96,40 +96,48 @@ Finalemente, se va agregando en cada iteración al array *vertical* con la funci
 
 #### Método horizontalMirror(self)
 - Encargado: 
+
 Este método debia devolver el espejo horizontal de la imagen.
 Para su elaboración, se usará una función llamada *invertirString*, esta función con ayuda del buble for invierte una cadena de caracteres.
 Con un buble for, en el método horizontalMirror, hacemos iteraciones con un contador *i* con las mismas especificaciones que en el anterior método. La diferencia esta que en este método se va ir cambiando los Strings por su inversión usando uso de la función *invertirString*.
 
 #### Método negative(self)
 - Encargado: 
+
 Este método debia devolver el negativo de la imagen.
 
 #### Método join(self, p)
 - Encargado: 
+
 Este método debia devolver la imagen del segundo argumento al lado derecho de la figura actual.
 Para su elaboración se hizo uso de un bucle for con las mismas condiciones que en el caso de verticalMirror y horizontalMirror. En cada iteración se le daba como valor al elemento que tocaba de *self.img* el mismo concatenado con la la linea que tocaba de *p.img*. Ello da como resultado la imagen almacenada en self, y a su derecha, pa imagen almacenada en p. El return se hace del objeto de la clase Picture almacenado en *self*.
 
 #### Método up(self, p)
 - Encargado: 
+
 Este método debia devolver la imagen del segundo argumento encima de la figura actual
 
 #### Método under(self, p)
 - Encargado: CHAMBILLA PERCA, Valentina Milagros
+
 Este método debia devolver la imagen del segundo argumento encima de la figura actual
 Para su elaboración se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se fue agregando a self.img com la función *insert*, la cual permite agregar elementos a arreglos en un indice especifico. Ello se realizó con el fin que al arreglo *self.img* se agregaran en orden las lineas de el arreglo *p.img*. Retorna el objeto picture resultante del arreglo *self.img*
 
 #### Método horizontalRepeat(self, n)
 - Encargado: 
+
 Este método devía devolver una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
 Se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se guarda en una variable *aux* el elemento ue le toca, y posteriormente se desarrolla un bucle con el contador j que va desde 0 hasta la cantidad de repeticiones menos 1, y en cada una de ellas, se le da como valor a el elemento que se le toca el valor de la variable *aux* concatenado con su propio valor. Se retorna el objeto de clase Picture que se obtiene en el arreglo *self.img*.
 
 #### Método verticalRepeat(self, n)
 - Encargado: 
+
 Este método devía devolver una nueva figura repitiendo la figura actual debajo la cantidad de veces que indique el valor de n.
 Primero, se creo un Array llamado *figura*. Se colocón un buble for con contador *c* que devolvería desde 0 hasta el número de repeticiones representado por *n*, ya que ello serían las repeticiones que se pidieron más la ficha inicial. Dentro de dicho buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Finalemente se va almacenando en el arreglo *figura* por completo, repitiendose ello las veces que indique el primer bucle.
 
 #### Método rotate(self)
 - Encargado: 
+
 Este método devía devolver una figura rotada 90 grados en sentido horario o antihorario.
 Primero, se creo un Array llamado *figura* vacio y una variable String llamada *text*. Se colocón un buble for con contador *c* que tiene las mismas caracteristicas de los bucles usados en mirror. Dentro de ese buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Luego se almacenará en la variable *text* el caracter en posición *c* de la cadena *t* que pertenece al arreglo *self.img*, agregandose en el arreglo *figura* por cada iteración y siendo dado su valor de *text* como "" para evitar reiteración, dando así una rotación de 90 grados en sentido horario. Se retorna el objeto Picture del arreglo *figura*.
 
