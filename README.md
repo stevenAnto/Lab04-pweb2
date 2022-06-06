@@ -144,6 +144,18 @@ Primero, se creo un Array llamado *figura* vacio y una variable String llamada *
 ### b) Ejercicio: Dibujar las siguientes figuras
 #### Inciso A
 <img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_a.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso B
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_b.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso C
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_c.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso D
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_d.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso E
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_e.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso F
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_f.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+#### Inciso G
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/ejercicio_02_g.png?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
 
 ## CUESTIONARIO
 ###   ¿Qué son los archivos *.pyc?
