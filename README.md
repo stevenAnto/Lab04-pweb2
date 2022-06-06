@@ -130,13 +130,13 @@ Este método devía devolver una nueva figura repitiendo la figura actual al cos
 Se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se guarda en una variable *aux* el elemento ue le toca, y posteriormente se desarrolla un bucle con el contador j que va desde 0 hasta la cantidad de repeticiones menos 1, y en cada una de ellas, se le da como valor a el elemento que se le toca el valor de la variable *aux* concatenado con su propio valor. Se retorna el objeto de clase Picture que se obtiene en el arreglo *self.img*.
 
 #### Método verticalRepeat(self, n)
-- Encargado: 
+- Encargado: ACO TITO, Anthony Edwin
 
 Este método devía devolver una nueva figura repitiendo la figura actual debajo la cantidad de veces que indique el valor de n.
 Primero, se creo un Array llamado *figura*. Se colocón un buble for con contador *c* que devolvería desde 0 hasta el número de repeticiones representado por *n*, ya que ello serían las repeticiones que se pidieron más la ficha inicial. Dentro de dicho buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Finalemente se va almacenando en el arreglo *figura* por completo, repitiendose ello las veces que indique el primer bucle.
 
 #### Método rotate(self)
-- Encargado: 
+- Encargado: ACO TITO, Anthony Edwin
 
 Este método devía devolver una figura rotada 90 grados en sentido horario o antihorario.
 Primero, se creo un Array llamado *figura* vacio y una variable String llamada *text*. Se colocón un buble for con contador *c* que tiene las mismas caracteristicas de los bucles usados en mirror. Dentro de ese buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Luego se almacenará en la variable *text* el caracter en posición *c* de la cadena *t* que pertenece al arreglo *self.img*, agregandose en el arreglo *figura* por cada iteración y siendo dado su valor de *text* como "" para evitar reiteración, dando así una rotación de 90 grados en sentido horario. Se retorna el objeto Picture del arreglo *figura*.
