@@ -77,333 +77,60 @@ En este archivo se nos proporciona los objetos de clase Picture, declarados en l
 
 La clase picture esta definida en este archivo, además de estar sus funciones las cuales determinarán su impresión. Este archivo será completado con distintas funciones que permitirán su interactividad y correcta impresión.
 
+## Archivo colors.py
+
+Este archivo es importado en picture.py. Este nos proporciona los codigos de color de cada caracter, asi como su inversión de color.
+
 # SOLUCIÓN Y RESULTADOS
 
 ## I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
 
-### a) Ejercicio 01: Escriba una función que reciba el número de día de la fecha actual new Date() - https://www.w3schools.com/jsref/jsref_obj_date.asp y devuelva el texto del día de la semana correspondientes. Por ejemplo si recibe 0, devolvería “Domingo”.
-
-#### Encargado: CALCINA PUMA, Esteven Antonio
-#### Branch: main (Creador de Repositorio )
-
-- ![ejercicio01](ejercicio01.jpg)
-
-### b) Ejercicio 02: Escriba una página web que reciba un texto y al presionar un botón muestre el mismo texto invertido en otra sección (div). Por ejemplo si se escribe “Hola”, se mostraría como “aloH”.
-
-#### Encargado: CALCINA PUMA, Esteven Antonio
-#### Branch: main (Creador de Repositorio )
-
-- ![ejercicio01](ejercicio02.jpg)
-
-### c) Ejercicio 03: Escribir una página que muestre cuántos días faltan para el día de Arequipa!
-
-#### Encargado: ACO TITO, Anthony Edwin
-#### Branch: Ejercicio03
-
-- ![ejercicio01](ejercicio03.jpg)
-
-### d) Ejercicio 04: Escribir un página que reciba el URL de la sesión de google meet de hoy y devuelva el código de la sesión sin guiones separadores
-
-#### Encargado: CHAMBILLA PERCA, Valentina Milagros
-#### Branch: Ejercicio04
-
-- ![ejercicio01](ejercicio04a.jpg)
-- ![ejercicio01](ejercicio04b.jpg)
-
-### e)Ejercicio 05: Escribir una página que permita calcular las suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámicamente, junto con otro botón de envió para calcular la suma.
-
-#### Encargado: GALVEZ QUILLA, Henry Isaias
-#### Branch: Ejercicio05
-
-<img src="https://github.com/stevenAnto/Lab02-pweb2-/blob/f0724f8d811e654473ad8d96ffdece825cb7929f/ejercicio05foto.jpg?raw=true"/>
-
-
-### f) Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
-
-- Link de videos :
-
-CALCINA PUMA, Esteven Antonio       -JavaScript comments             https://flipgrid.com/0d179ac7
-
-GALVEZ QUILLA, Henry Isaias         -JavaScript Data Types (Parte 1) https://flipgrid.com/3d91cf2a
-                                    -JavaScript Data Types (Parte 2) https://flipgrid.com/83106fb6
-
-
-CHAMBILLA PERCA, Valentina Milagros -JavaScript let                  https://flipgrid.com/966f0dbf
-       
-ACO TITO, Anthony Edwin             -JavaScript output               https://flipgrid.com/3d74ec00
-                            
-### - Link de Github GRUPAL : https://github.com/stevenAnto/Lab02-pweb2-.git
-
-
-
-## OBJETIVOS TEMAS Y COMPETENCIAS
-
-### OBJETIVOS
-
--   Programar usando Python.
--   Mostrar un ejemplo de separación de intereses en clases: el modelo (lista de strings) de su vista (dibujo de gráficos).
-
-### TEMAS
--   Listas
--   Ciclos
--   Programación orientada a objetos
--   ¿Programación funcional?
-
-<details>
-<summary>COMPETENCIAS</summary>
-
-- C.c Diseña responsablemente sistemas, componentes o procesos para satisfacer necesidades dentro de restricciones realistas: económicas, medio ambientales, sociales, políticas, éticas, de salud, de seguridad, manufacturación y sostenibilidad.
-- C.m Construye responsablemente soluciones siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
-- C.p Aplica de forma flexible técnicas, métodos, principios, normas, estándares y herramientas de ingeniería necesarias para la construcción de software e implementación de sistemas de información.
-
-</details>
-
-## CONTENIDO DE LA GUÍA
-
-### MARCO CONCEPTUAL
-
--   https://www.w3schools.com/python/python_reference.asp
--   https://docs.python.org/3/tutorial/
-
--   Virtual Environment
-    -   La reutilización de código(paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo. 
-    -   NodeJS usa paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json. 
-    -   Por eso este modo de trabajo nos permite tener distintos proyectos con distintas bibliotecas, de distintas versiones, en la misma máquina, sin que existan conflictos. 
-    -   Para compartir el proyecto se debe compartir el archivo package.json y luego llamar a "npm install" para instalar las bibliotecas adecuadas para el proyecto.
-    -   Java usa ant y maven, junto con archivos xml para realizar estas tareas.
-    -   Python tiene virtualenv, para crear este espacio de trabajo.
-    -   Python utiliza el manejador de paquetes pip.
-
--   Utilizar Python
-    -   Para un instalación local en sistemas operativos MS Windows utilice: https://www.python.org/downloads/windows/
-    -   Tambien ud puede probar código en herramientas online: https://www.programiz.com/python-programming/online-compiler/
-
-    -   Python en Debian GNU/Linux:
-        -   Debian Linux viene con Python 3 y Python 2 preinstalados.
-            ```sh
-            python3 --version
-            Python 3.9.2
-            ```
-        -   Instalemos pip, una herramienta que instalará y administrará los paquetes de programación que queramos usar en nuestros proyectos de desarrollo. 
-            ```sh
-            sudo apt-get install -y python3-pip
-            ```
-        -   Paquetes y herramientas de desarrollo más para instalar para garantizar que tengamos una configuración sólida para nuestro entorno de programación:
-            ```sh
-            sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
-            ```
-    -   Configurar un entorno virtual:
-        - Los entornos virtuales permiten tener un espacio aislado en los proyectos Python
-        -   Garantizando que cada proyecto pueda tener su propio conjunto de dependencias que no interrumpirán a otros proyectos.
-        -   Manejando diferentes versiones de los paquetes. Esto es especialmente importante cuando se trabaja con paquetes de terceros.
-        -   Puede varios entornos de programación. 
-        -   Cada entorno es un directorio en la que se ubicaran sus scripts.
-        -   Usaremos el módulo venv , que es parte de la biblioteca estándar de Python.
-        -   Instalemos venv escribiendo:
-            ```sh
-            sudo apt install -y python3-venv
-            ```
-        -   Para crear un ambiente elija en qué directorio.
-            ```sh
-            mkdir -p ~/unsa/pw2/labs/lab04/my_env
-            cd ~/unsa/pw2/labs/lab04/my_env
-            ```
-        -   En el directorio crea un entorno virtual ejecutando el siguiente comando:
-            ```sh
-            virtualenv -p python3 .
-            mkdir -p ~/unsa/pw2/labs/lab04/my_env/src
-            cd ~/unsa/pw2/labs/lab04/my_env/src
-            ```
-        -   Esto es lo que sucedio:
-            ```sh
-            tree -L 2 ../
-            ```
-            ```sh
-            .
-            ├── bin
-            │   ├── activate
-            │   ├── activate.csh
-            │   ├── activate.fish
-            │   ├── activate.nu
-            │   ├── activate.ps1
-            │   ├── activate_this.py
-            │   ├── deactivate.nu
-            │   ├── pip
-            │   ├── pip3
-            │   ├── pip-3.9
-            │   ├── pip3.9
-            │   ├── python -> /usr/bin/python3
-            │   ├── python3 -> python
-            │   ├── python3.9 -> python
-            │   ├── wheel
-            │   ├── wheel3
-            │   ├── wheel-3.9
-            │   └── wheel3.9
-            ├── lib
-            │   └── python3.9
-            ├── pyvenv.cfg
-            └── src
-            ```
-        -   Ejecute el script de activación para activar el entorno virtual:
-            ```sh
-            source ../bin/activate
-            ```
-            ```sh
-            (my_env) user@localhost:$
-            ```
-
-        -   Cree el "Hola Mundo" en su entorno de programación:
-            ```sh
-            vim hello.py
-            ```
-            ```sh
-            print("Hello, World!")
-            ```
-            ```sh
-            python3 hello.py
-            ```
-        -   Para salir del entorno virtual:
-            ```sh
-            deactivate
-            ```
-
-## EJERCICIO RESUELTO POR EL DOCENTE
-
--   Active su entorno virtual
-    ```sh
-    source ../bin/activate
-    ```
--   Ejercicios sobre matrices de tamaño NxN:
-
-    -   Determine si una matriz es escalar:
-        ```sh
-        vim esEscalar.py
-        ```
-        ```sh
-        def esEscalar(m):
-            d = m[0][0]
-            for i in range(len(m)):
-                for j in range(len(m)):
-                    if i != j:
-                        if m[i][j] != 0:
-                            print(m[i][j])
-                            return False
-                    elif m[i][j] != d:
-                        print(m[i][j])
-                        return False
-            return True
-        ```
-        ```sh
-        vim test_esEscalar.py
-        ```
-        ```sh
-        import esEscalar as fu
-
-        def prueba(M):
-            if (fu.esEscalar(M)):
-                print("Si es escalar")
-            else:
-                print("No es escalar")
-
-        #Z = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        #Z = [[1, 2, 3], [4, 1, 6], [7, 8, 1]]
-        Z = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-
-        prueba(Z)
-        ```
-
-    -   Determine si una matriz es unitaria:
-         ```sh
-        vim esUnitaria.py
-        ```
-        ```sh
-        import esEscalar as fu
-
-        def esUnitaria(m):
-            return m[0][0] == 1 and fu.esEscalar(m)
-        ```
-        ```sh
-        vim test_esUnitaria.py
-        ```
-        ```sh
-        import esUnitaria as fu
-
-        def prueba(M):
-            if (fu.esUnitaria(M)):
-                print("Si es unitaria")
-            else:
-                print("No es unitaria")
-
-        #Z = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        #Z = [[1, 2, 3], [4, 1, 6], [7, 8, 1]]
-        Z = [[2, 0, 0], [0, 2, 0], [0, 0, 2]]
-        #Z = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-
-        prueba(Z)
-        ```
-
-#
-
-## EJERCICIOS PROPUESTOS
--   En esta tarea usted pondrá en práctica sus conocimientos de programación en Python para dibujar un tablero de Ajedrez. 
--   La parte gráfica ya está programada, usted sólo tendrá que concentrarse en las estructuras de datos subyacentes.
--   Con el código proporcionado usted dispondrá de varios objetos de tipo Picture para poder realizar su tarea:
-    ![Fichas de ajedrez](imagenes/picture.png)
--   Estos objetos estarán disponibles importando la biblioteca: [chessPictures](Tarea-del-Ajedrez/chessPictures.py) y estarán internamente representados con arreglos de strings que podrá revisar en el archivo [pieces.py](Tarea-del-Ajedrez/pieces.py)
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) tiene un sólo atributo: el arreglo de strings img, el cual contendrá la representación en caracteres de la figura que se desea dibujar. 
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) ya cuenta con una función implementada, no debe modificarla, pero si puede usarla para implementar sus otras funciones:
-    -   _invColor: recibe un color como un caracter de texto y devuelve su color negativo, también como texto, deberá revisar el archivo [colors.py](Tarea-del-Ajedrez/colors.py) para conocer los valores negativos de cada caracter.
-
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) contará además con varios métodos que usted deberá implementar:
-    1.  verticalMirror: Devuelve el espejo vertical de la imagen
-    2.  horizontalMirror: Devuelve el espejo horizontal de la imagen
-    3.  negative: Devuelve un negativo de la imagen
-    4.  join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
-    5.  up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
-    6.  under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
-    7.  horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
-    8.  verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
-
--   Tenga en cuenta que para implementar todos estos métodos, sólo deberá trabajar sobre la representación interna de un Picture, es decir su atributo img.
-
--   Para dibujar una objeto Picture bastará importar el método draw de la biblioteca interpreter y usarlo de la siguiente manera:
-    ```sh
-    $ python3
-    Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
-    [GCC 10.2.1 20210110] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
-    ```
-    ```sh
-    >>> from chessPictures import *
-    >>> from interpreter import draw
-    pygame 1.9.6
-    Hello from the pygame community. https://www.pygame.org/contribute.html
-    >>> draw(rock)
-    ```
-    ![PyGame](imagenes/pygame_rock.png)
-
--   Ejercicios:
-
-    -   Para resolver los siguientes ejercicios sólo está permitido usar ciclos, condicionales, definición de listas por comprensión, sublistas, map, join, (+), lambda, zip, append, pop, range.
-
-        1.  Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
-        2.  Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
-
-            *    (a) ![(a)](imagenes/ejercicio_02_a.png)
-
-            *    (b) ![(b)](imagenes/ejercicio_02_b.png)
-
-            *    (c) ![(c)](imagenes/ejercicio_02_c.png)
-
-            *    (d) ![(d)](imagenes/ejercicio_02_d.png)
-
-            *    (e) ![(e)](imagenes/ejercicio_02_e.png)
-
-            *    (f) ![(f)](imagenes/ejercicio_02_f.png)
-
-            *    (g) ![(g)](imagenes/ejercicio_02_g.png)
-
-#
+### a) Ejercicio: Implementación de los métodos de la clase Picture
+
+#### Método verticalMirror(self)
+Encargado: CALCINA PUMA, Esteven Antonio
+Este método debia devolver el espejo vertical de la imagen.
+Para elaborar ello, primeramente se generó un nuevo Array (arreglo) llamado *vertical* que almacene el nuevo arreglo de string y una variable Integer (entera) llamada *contador* la cual almacenará el último indice del arreglo de la pieza, la cual es la longitud del arreglo menos 1 (Ya que los arreglos inician en 0). Luego, con el bucle for, el cual se manejaría por un contador *i* iniciado en 0 (predeterminado) hasta el rango que se indicara por la longitud del arreglo, en este caso, al ser 58 elementos, el contador *i* irá desde 0 hasta 57.
+Finalemente, se va agregando en cada iteración al array *vertical* con la función *append* desde los últimos elementos de la pieza hasta el primero, reduciendole al contador uno en cada iteraación para que llegue a 0 al final. Se retorna el arreglo *vertical*.
+
+#### Método horizontalMirror(self)
+Encargado: 
+Este método debia devolver el espejo horizontal de la imagen.
+Para su elaboración, se usará una función llamada *invertirString*, esta función con ayuda del buble for invierte una cadena de caracteres.
+Con un buble for, en el método horizontalMirror, hacemos iteraciones con un contador *i* con las mismas especificaciones que en el anterior método. La diferencia esta que en este método se va ir cambiando los Strings por su inversión usando uso de la función *invertirString*.
+
+#### Método negative(self)
+Encargado: 
+Este método debia devolver el negativo de la imagen.
+
+#### Método join(self, p)
+Encargado: 
+Este método debia devolver la imagen del segundo argumento al lado derecho de la figura actual.
+Para su elaboración se hizo uso de un bucle for con las mismas condiciones que en el caso de verticalMirror y horizontalMirror. En cada iteración se le daba como valor al elemento que tocaba de *self.img* el mismo concatenado con la la linea que tocaba de *p.img*. Ello da como resultado la imagen almacenada en self, y a su derecha, pa imagen almacenada en p. El return se hace del objeto de la clase Picture almacenado en *self*.
+
+#### Método up(self, p)
+Encargado: 
+Este método debia devolver la imagen del segundo argumento encima de la figura actual
+
+#### Método under(self, p)
+Encargado: CHAMBILLA PERCA, Valentina Milagros
+Este método debia devolver la imagen del segundo argumento encima de la figura actual
+Para su elaboración se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se fue agregando a self.img com la función *insert*, la cual permite agregar elementos a arreglos en un indice especifico. Ello se realizó con el fin que al arreglo *self.img* se agregaran en orden las lineas de el arreglo *p.img*. Retorna el objeto picture resultante del arreglo *self.img*
+
+#### Método horizontalRepeat(self, n)
+Encargado: 
+Este método devía devolver una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
+Se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se guarda en una variable *aux* el elemento ue le toca, y posteriormente se desarrolla un bucle con el contador j que va desde 0 hasta la cantidad de repeticiones menos 1, y en cada una de ellas, se le da como valor a el elemento que se le toca el valor de la variable *aux* concatenado con su propio valor. Se retorna el objeto de clase Picture que se obtiene en el arreglo *self.img*.
+
+#### Método verticalRepeat(self, n)
+Encargado: 
+Este método devía devolver una nueva figura repitiendo la figura actual debajo la cantidad de veces que indique el valor de n.
+Primero, se creo un Array llamado *figura*. Se colocón un buble for con contador *c* que devolvería desde 0 hasta el número de repeticiones representado por *n*, ya que ello serían las repeticiones que se pidieron más la ficha inicial. Dentro de dicho buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Finalemente se va almacenando en el arreglo *figura* por completo, repitiendose ello las veces que indique el primer bucle.
+
+#### Método rotate(self)
+Encargado: 
+Este método devía devolver una figura rotada 90 grados en sentido horario o antihorario.
+Primero, se creo un Array llamado *figura* vacio y una variable String llamada *text*. Se colocón un buble for con contador *c* que tiene las mismas caracteristicas de los bucles usados en mirror. Dentro de ese buble se encuentra el bucle for con contador *t* que representará los elementos del arreglo *self.img*. Luego se almacenará en la variable *text* el caracter en posición *c* de la cadena *t* que pertenece al arreglo *self.img*, agregandose en el arreglo *figura* por cada iteración y siendo dado su valor de *text* como "" para evitar reiteración, dando así una rotación de 90 grados en sentido horario. Se retorna el objeto Picture del arreglo *figura*.
 
 ## CUESTIONARIO
 ###   ¿Qué son los archivos *.pyc?
