@@ -89,6 +89,7 @@ Este archivo es importado en picture.py. Este nos proporciona los codigos de col
 
 #### Método verticalMirror(self)
 - Encargado: CALCINA PUMA, Esteven Antonio
+
 Este método debia devolver el espejo vertical de la imagen.
 Para elaborar ello, primeramente se generó un nuevo Array (arreglo) llamado *vertical* que almacene el nuevo arreglo de string y una variable Integer (entera) llamada *contador* la cual almacenará el último indice del arreglo de la pieza, la cual es la longitud del arreglo menos 1 (Ya que los arreglos inician en 0). Luego, con el bucle for, el cual se manejaría por un contador *i* iniciado en 0 (predeterminado) hasta el rango que se indicara por la longitud del arreglo, en este caso, al ser 58 elementos, el contador *i* irá desde 0 hasta 57.
 Finalemente, se va agregando en cada iteración al array *vertical* con la función *append* desde los últimos elementos de la pieza hasta el primero, reduciendole al contador uno en cada iteraación para que llegue a 0 al final. Se retorna el arreglo *vertical*.
