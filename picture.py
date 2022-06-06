@@ -24,10 +24,10 @@ class Picture:
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    for i in  range(len(self.img)):
-        self.img[i] = invertirString(self.img[i])
-    return Picture(self.img)
-
+    figura= []
+    for text in self.img:
+        figura.append(invertirString(text))
+    return Picture(figura)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
@@ -43,11 +43,11 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    #print (self)
+    figura= []
     for i in range(len(self.img)):
-        self.img[i]=self.img[i]+p.img[i]
+        figura.append(self.img[i]+p.img[i])
 
-    return Picture(self.img)
+    return Picture(figura)
 
   def up(self, p):
     def cambiar(caracter1,caracter2):
@@ -102,10 +102,9 @@ class Picture:
       text= ""
     return Picture(figura)
 
-
 def invertirString(cadena):
-    strInvertido=""
-    for caracter  in cadena:
-        strInvertido = caracter + strInvertido
-    return strInvertido
+  strInvertido=""
+  for caracter  in cadena:
+      strInvertido = caracter + strInvertido
+  return strInvertido
 
