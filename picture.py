@@ -35,9 +35,10 @@ class Picture:
     #elemento de la lista del objeto picture , para eso usamos join que une todo los caracteres vacios devolviendo nuevamente
     #un string. Interesante la manera como el join reconoce como un objeto iterable al for entre  corchetes
     cambiarCaracteres =  lambda cadena : "".join([self._invColor(cadena[i]) for  i  in range(len(cadena))])
-    for i in range(len(self.img)):
-        self.img[i] = cambiarCaracteres(self.img[i])
-    return Picture(self.img)
+    figura=[]
+    for text in self.img:
+      figura.append(cambiarCaracteres(text))
+    return Picture(figura)
 
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
@@ -64,9 +65,10 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    for i in range(len(p.img)):
-      self.insert(i,p.img[i])
-    return Picture(self.img)
+    figura= self.img
+    for text in p.img:
+      figura.append(text)
+    return Picture(figura)
    # return Picture(None)
   
   def horizontalRepeat(self, n):
