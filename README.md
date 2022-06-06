@@ -6,9 +6,8 @@
             <th>
                 <span style="font-weight:bold;">UNIVERSIDAD NACIONAL DE SAN AGUSTIN</span><br />
                 <span style="font-weight:bold;">FACULTAD DE INGENIERÍA DE PRODUCCIÓN Y SERVICIOS</span><br />
-                <span style="font-weight:bold;">DEPARTAMENTO ACADÉMICO DE INGENIERÍA DE SISTEMAS E INFORMÁTICA</span><br />
                 <span style="font-weight:bold;">ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS</span>
-            </th>
+            </th>``
             <td><img src="https://github.com/rescobedoq/pw2/blob/main/abet.png?raw=true" alt="ABET" style="width:50%; height:auto"/></td>
         </tr>
     </theader>
@@ -21,9 +20,10 @@
 
 <div align="center">
 <span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
+<span></span>
 </div>
 
-
+<div aling="center">
 <table>
 <theader>
 <tr><th colspan="6">INFORMACIÓN BÁSICA</th></tr>
@@ -35,37 +35,106 @@
 <td>NÚMERO DE PRÁCTICA:</td><td>04</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA INICIO::</td><td>16-May-2022</td><td>FECHA FIN:</td><td>20-May-2022</td><td>DURACIÓN:</td><td>04 horas</td>
+<td>FECHA DE PRESENTACIÓN: </td><td>05-Jun-2022</td><td>HORA DE PRESENTACIÓN: </td><td colspan="3">11:00 pm</td>
 </tr>
-<tr><td colspan="6">RECURSOS:
-    <ul>
-        <li>https://www.w3schools.com/python/python_reference.asp</li>
-        <li>https://docs.python.org/3/tutorial/</li>
-    </ul>
+<tr><td colspan="4">INTEGRANTE(S): 
+<ul>
+<li>ACO TITO, Anthony Edwin (aacot@unsa.edu.pe)</li>
+<li>CALCINA PUMA, Esteven Antonio (ecalcinap@unsa.edu.pe)</li>
+<li>CHAMBILLA PERCA, Valentina Milagros (vchambillap@unsa.edu.pe)</li>
+<li>GALVEZ QUILLA, Henry Isaias (hgalvezq@unsa.edu.pe)</li>
+</ul>
 </td>
+<td>NOTA: </td>
+<td width="150"></td>
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
-<li>Richart Smith Escobedo Quispe - rescobedoq@unsa.edu.pe</li>
+<li>Richart Smith Escobedo Quispe (rescobedoq@unsa.edu.pe)</li>
 </ul>
 </td>
 </<tr>
 </tdbody>
 </table>
+</div>
 
-# Python
+# ACOTACIONES PRELIMINARES
 
-[![License][license]][license-file]
-[![Downloads][downloads]][releases]
-[![Last Commit][last-commit]][releases]
+Para la elaboración de los ejercicios propuestos se hizo uso de los archivos entregados por el docente encargado, los cuales son:
 
-[![Debian][Debian]][debian-site]
-[![Git][Git]][git-site]
-[![GitHub][GitHub]][github-site]
-[![Vim][Vim]][vim-site]
-[![Java][Java]][java-site]
+## Archivo piece.py
 
-#
+Este archivo representaba por medio de un arreglo de Strings las piezas de ajedres. Por ejemplo:
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/CapturaArchivoPieces.PNG?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+Cada ficha esta representada por un arreglo de 58 Strings, los cuales tienen una longitud de 58 caracteres.
+
+## Archivo chessPictures.py
+
+En este archivo se nos proporciona los objetos de clase Picture, declarados en la siguientes lineas
+<img src="https://github.com/stevenAnto/Lab04-pweb2/blob/main/imagenes/CapturaArchivoPicture.PNG?raw=true" alt="ValentinaChambillaCapCommits" style="width:100%; margin: auto; display: block;"/>
+
+## Archivo picture.py
+
+La clase picture esta definida en este archivo, además de estar sus funciones las cuales determinarán su impresión. Este archivo será completado con distintas funciones que permitirán su interactividad y correcta impresión.
+
+# SOLUCIÓN Y RESULTADOS
+
+## I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+
+### a) Ejercicio 01: Escriba una función que reciba el número de día de la fecha actual new Date() - https://www.w3schools.com/jsref/jsref_obj_date.asp y devuelva el texto del día de la semana correspondientes. Por ejemplo si recibe 0, devolvería “Domingo”.
+
+#### Encargado: CALCINA PUMA, Esteven Antonio
+#### Branch: main (Creador de Repositorio )
+
+- ![ejercicio01](ejercicio01.jpg)
+
+### b) Ejercicio 02: Escriba una página web que reciba un texto y al presionar un botón muestre el mismo texto invertido en otra sección (div). Por ejemplo si se escribe “Hola”, se mostraría como “aloH”.
+
+#### Encargado: CALCINA PUMA, Esteven Antonio
+#### Branch: main (Creador de Repositorio )
+
+- ![ejercicio01](ejercicio02.jpg)
+
+### c) Ejercicio 03: Escribir una página que muestre cuántos días faltan para el día de Arequipa!
+
+#### Encargado: ACO TITO, Anthony Edwin
+#### Branch: Ejercicio03
+
+- ![ejercicio01](ejercicio03.jpg)
+
+### d) Ejercicio 04: Escribir un página que reciba el URL de la sesión de google meet de hoy y devuelva el código de la sesión sin guiones separadores
+
+#### Encargado: CHAMBILLA PERCA, Valentina Milagros
+#### Branch: Ejercicio04
+
+- ![ejercicio01](ejercicio04a.jpg)
+- ![ejercicio01](ejercicio04b.jpg)
+
+### e)Ejercicio 05: Escribir una página que permita calcular las suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámicamente, junto con otro botón de envió para calcular la suma.
+
+#### Encargado: GALVEZ QUILLA, Henry Isaias
+#### Branch: Ejercicio05
+
+<img src="https://github.com/stevenAnto/Lab02-pweb2-/blob/f0724f8d811e654473ad8d96ffdece825cb7929f/ejercicio05foto.jpg?raw=true"/>
+
+
+### f) Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
+
+- Link de videos :
+
+CALCINA PUMA, Esteven Antonio       -JavaScript comments             https://flipgrid.com/0d179ac7
+
+GALVEZ QUILLA, Henry Isaias         -JavaScript Data Types (Parte 1) https://flipgrid.com/3d91cf2a
+                                    -JavaScript Data Types (Parte 2) https://flipgrid.com/83106fb6
+
+
+CHAMBILLA PERCA, Valentina Milagros -JavaScript let                  https://flipgrid.com/966f0dbf
+       
+ACO TITO, Anthony Edwin             -JavaScript output               https://flipgrid.com/3d74ec00
+                            
+### - Link de Github GRUPAL : https://github.com/stevenAnto/Lab02-pweb2-.git
+
+
 
 ## OBJETIVOS TEMAS Y COMPETENCIAS
 
