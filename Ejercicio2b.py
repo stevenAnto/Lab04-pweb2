@@ -4,4 +4,4 @@ from picture import *
 nk= knight.negative()
 k= knight
 fila= k.join(nk)
-draw(fila.under(fila.horizontalMirror()))
+draw(fila.horizontalMirror().up(fila))

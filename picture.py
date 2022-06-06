@@ -52,8 +52,8 @@ class Picture:
   def up(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    figura= self.img
-    for text in p.img:
+    figura= p.img
+    for text in self.img:
       figura.append(text)
     return Picture(figura)
    # return Picture(None)
