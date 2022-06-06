@@ -124,7 +124,7 @@ Este método debia devolver la imagen del segundo argumento encima de la figura 
 Para su elaboración se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se fue agregando a self.img com la función *insert*, la cual permite agregar elementos a arreglos en un indice especifico. Ello se realizó con el fin que al arreglo *self.img* se agregaran en orden las lineas de el arreglo *p.img*. Retorna el objeto picture resultante del arreglo *self.img*
 
 #### Método horizontalRepeat(self, n)
-- Encargado: 
+- Encargado: GALVEZ QUILLA, Henry Isaias
 
 Este método devía devolver una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n.
 Se hizo uso de un bucle for con las mismas condiciones que en el caso de los métodos que buscaban espejos. En cada iteración, se guarda en una variable *aux* el elemento ue le toca, y posteriormente se desarrolla un bucle con el contador j que va desde 0 hasta la cantidad de repeticiones menos 1, y en cada una de ellas, se le da como valor a el elemento que se le toca el valor de la variable *aux* concatenado con su propio valor. Se retorna el objeto de clase Picture que se obtiene en el arreglo *self.img*.
